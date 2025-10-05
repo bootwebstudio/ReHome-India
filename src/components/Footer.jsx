@@ -27,7 +27,7 @@ const Footer = () => {
               <h4 className="text-xl font-bold">Quick Links</h4>
               <div className="text-base lg:text-lg flex flex-col gap-2 text-center sm:text-left">
                 <Link to="/">Home</Link>
-                <Link to="/about">About us</Link>
+                <Link to="/about-us">About us</Link>
                 <Link to="/purchase">Shop</Link>
                 <Link to="/sell">Sell Furniture</Link>
                 <Link to="/contact">Contact Us</Link>

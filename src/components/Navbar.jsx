@@ -7,20 +7,20 @@ const Navbar = () => {
   return (
     <div className="w-full h-full p-4 px-0 border-b border-dark flex items-center justify-between">
       {/* Brand Logo */}
-      <div className="flex flex-col items-center">
+      <Link to="/" className="flex flex-col items-center">
         <img src="/Logo.png" alt="" className="w-36 lg:w-48" />
-      </div>
+      </Link>
 
       {/* Navigation Menu */}
       <div className="flex items-center gap-4 xl:hidden">
         <div className="text-xl leading-none flex gap-4">
-          <i class="ri-search-line"></i>
-          <i class="ri-poker-hearts-line"></i>
-          <i class="ri-shopping-bag-line"></i>
-          <i class="ri-user-line"></i>
+          <i className="ri-search-line"></i>
+          <i className="ri-poker-hearts-line"></i>
+          <i className="ri-shopping-bag-line"></i>
+          <i className="ri-user-line"></i>
         </div>
         <div className="p-1.5 px-2.5 text-xl rounded-full text-neutral bg-brand">
-          <i class="ri-menu-3-line"></i>
+          <i className="ri-menu-3-line"></i>
         </div>
       </div>
 
@@ -46,10 +46,10 @@ const Navbar = () => {
         </Link>
 
         <div className="text-lg leading-none flex gap-4">
-          <i class="ri-search-line"></i>
-          <i class="ri-poker-hearts-line"></i>
-          <i class="ri-shopping-bag-line"></i>
-          <i class="ri-user-line"></i>
+          <i className="ri-search-line"></i>
+          <i className="ri-poker-hearts-line"></i>
+          <i className="ri-shopping-bag-line"></i>
+          <i className="ri-user-line"></i>
         </div>
 
         <button className="p-4 px-4 text-lg leading-none rounded-md text-neutral bg-brand">
