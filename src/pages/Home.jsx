@@ -177,8 +177,8 @@ const Home = () => {
         {/* Furnitures Carousel */}
         {filteredData.length > 0 ? (
           <Swiper
-            spaceBetween={32}
-            slidesPerView={1.5}
+            spaceBetween={16}
+            slidesPerView={2}
             breakpoints={{
               640: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
