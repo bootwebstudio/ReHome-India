@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Modernist";
+  src: url("/fonts/Modernist.woff2") format("woff2");
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
