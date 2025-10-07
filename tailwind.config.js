@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: "#6D4C41", // Forest Green
-        neutral: "#F5F0E1", // Off-White
-        dark: "#333333", // Charcoal
+        brand: "#6D4C41",
+        neutral: "#F5F0E1",
+        dark: "#333333",
       },
     },
   },

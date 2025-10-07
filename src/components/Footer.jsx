@@ -2,16 +2,13 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full mb-8 rounded-md text-neutral bg-dark">
+    <div className="w-full h-full mb-4 lg:mb-8 rounded-md text-neutral bg-dark">
       <div className="w-full p-8 flex flex-col lg:flex-row gap-12 lg:gap-20">
         {/* Logo / Brand */}
         <div className="flex-1 flex flex-col items-center lg:items-start gap-4">
-          <div className="w-fit flex flex-col items-center lg:items-start">
-            <h2 className="text-4xl font-bold leading-none">YeLo</h2>
-            <span className="text-xs font-bold leading-none uppercase">
-              Furnitures
-            </span>
-          </div>
+          <Link to="/" className="flex flex-col items-center">
+            <img src="/Logo.png" alt="" className="w-36 lg:w-48" />
+          </Link>
           <p className="w-full text-base lg:text-lg leading-tight text-center lg:text-left">
             ReHome India is the best pre-owned furniture marketplace in India
             offering the best condition furniture at an affordable price.
@@ -30,7 +27,7 @@ const Footer = () => {
                 <Link to="/about-us">About us</Link>
                 <Link to="/purchase">Shop</Link>
                 <Link to="/sell">Sell Furniture</Link>
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact">Contact</Link>
               </div>
             </div>
 

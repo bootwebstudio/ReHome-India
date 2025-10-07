@@ -178,7 +178,7 @@ const Home = () => {
         {filteredData.length > 0 ? (
           <Swiper
             spaceBetween={16}
-            slidesPerView={2}
+            slidesPerView={1.5}
             breakpoints={{
               640: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
@@ -204,23 +204,23 @@ const Home = () => {
 
       {/* Qualities */}
       <div className="w-full h-full p-12 px-0 lg:p-20 lg:px-0 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-        <div className="w-full h-full flex flex-col items-center gap-4">
-          <h2 className="text-5xl font-bold text-center">850+</h2>
-          <p className="w-full lg:w-[80%] text-xl text-center leading-tight">
+        <div className="w-full h-full flex flex-col items-center gap-2 lg:gap-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-center">850+</h2>
+          <p className="w-[80%] text-lg lg:text-xl text-center leading-tight">
             Customers have trusted us for pre-owned funiture
           </p>
         </div>
-        <div className="w-full h-full flex flex-col items-center gap-4">
-          <h2 className="text-5xl font-bold text-center">225+</h2>
-          <p className="w-full lg:w-[80%] text-xl text-center leading-tight">
+        <div className="w-full h-full flex flex-col items-center gap-2 lg:gap-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-center">225+</h2>
+          <p className="w-[80%] text-lg lg:text-xl text-center leading-tight">
             Pre-owned furnitures have been sold with ease
           </p>
         </div>
-        <div className="w-full h-full flex flex-col items-center gap-4">
-          <h2 className="text-5xl font-bold text-center">
+        <div className="w-full h-full flex flex-col items-center gap-2 lg:gap-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-center">
             98<span className="font-serif">%</span>
           </h2>
-          <p className="w-full lg:w-[80%] text-xl text-center leading-tight">
+          <p className="w-[80%] text-lg lg:text-xl text-center leading-tight">
             Customers are satisfied from the purchased furniture
           </p>
         </div>
@@ -228,7 +228,7 @@ const Home = () => {
 
       {/* Latest Collection */}
       <div className="w-full h-full flex flex-col gap-8">
-        <h2 className="text-4xl font-bold">Our Latest Collections</h2>
+        <h2 className="text-4xl lg:text-5xl font-bold">Our Latest Collections</h2>
 
         <Swiper
           spaceBetween={32}

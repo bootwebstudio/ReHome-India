@@ -22,11 +22,11 @@ const FurnitureCard = ({ item }) => {
         </h4>
 
         <div className="flex items-center gap-1.5">
-          <h4 className="text-sm lg:text-lg">₹{item.price.toLocaleString()}</h4>
-          <h6 className="text-xs line-through text-zinc-600">
+          <h4 className="text-base lg:text-lg">₹{item.price.toLocaleString()}</h4>
+          <h6 className="text-sm line-through text-zinc-600">
             ₹{item.originalPrice.toLocaleString()}
           </h6>
-          <h6 className="text-xs lg:text-base font-bold text-brand">({discount}% off)</h6>
+          <h6 className="text-sm lg:text-base font-bold text-brand">({discount}% off)</h6>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 const categoriesData = [
   {
     title: "Seating",
+    route: "/purchase/seating",
     description:
       "Discover sofas, chairs, and ottomans that bring comfort to every home.",
     image:
@@ -8,6 +9,7 @@ const categoriesData = [
   },
   {
     title: "Tables",
+    route: "/purchase/tables",
     description:
       "From dining to coffee tables — crafted for gatherings that matter.",
     image:
@@ -15,6 +17,7 @@ const categoriesData = [
   },
   {
     title: "Beds",
+    route: "/purchase/beds",
     description:
       "Sleep soundly with durable, pre-loved beds that feel brand new.",
     image:
@@ -22,6 +25,7 @@ const categoriesData = [
   },
   {
     title: "Storage",
+    route: "/purchase/storage",
     description:
       "Cabinets, racks & shelves — practical storage with timeless style.",
     image:
@@ -29,6 +33,7 @@ const categoriesData = [
   },
   {
     title: "Home Decor",
+    route: "/purchase/home-decor",
     description:
       "Handpicked accents and decor that add character to your space.",
     image:

@@ -9,6 +9,12 @@ import Blogs from "./pages/Blogs";
 import Purchase from "./pages/Purchase";
 import Contact from "./pages/Contact";
 
+import Seating from "./pages/purchase/Seating";
+import Tables from "./pages/purchase/Tables";
+import Beds from "./pages/purchase/Beds";
+import Storage from "./pages/purchase/Storage";
+import HomeDecor from "./pages/purchase/HomeDecor";
+
 const AppRouter = () => {
   return (
     <Routes>
@@ -18,6 +24,13 @@ const AppRouter = () => {
       <Route path="/blogs" element={<Blogs />} />
       <Route path="/purchase" element={<Purchase />} />
       <Route path="/contact" element={<Contact />} />
+
+      {/* Purchase Routes */}
+      <Route path="/purchase/seating" element={<Seating />} />
+      <Route path="/purchase/tables" element={<Tables />} />
+      <Route path="/purchase/beds" element={<Beds />} />
+      <Route path="/purchase/storage" element={<Storage />} />
+      <Route path="/purchase/home-decor" element={<HomeDecor />} />
     </Routes>
   );
 };
