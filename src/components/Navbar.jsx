@@ -53,9 +53,12 @@ const Navbar = () => {
           Contact
         </Link>
 
-        <button className="w-full p-4 text-xl leading-none rounded-md text-neutral bg-brand">
+        <Link
+          to="/sell"
+          className="w-full p-4 text-xl text-center leading-none rounded-md text-neutral bg-brand"
+        >
           Become a seller
-        </button>
+        </Link>
       </div>
 
       {/* Navigation Links */}
@@ -85,9 +88,12 @@ const Navbar = () => {
           <i className="ri-user-line"></i>
         </div>
 
-        <button className="p-4 px-4 text-lg leading-none rounded-md text-neutral bg-brand">
+        <Link
+          to="/sell"
+          className="p-4 px-4 text-lg text-center leading-none rounded-md text-neutral bg-brand"
+        >
           Become a seller
-        </button>
+        </Link>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ const Contact = () => {
       <Navbar />
 
       {/* Main Section */}
-      <div className="w-full h-full p-8 px-0 flex flex-col items-center gap-16">
+      <div className="w-full h-full p-8 px-0 flex flex-col items-center gap-8 lg:gap-16">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto flex flex-col gap-4">
           <h2 className="text-4xl font-bold leading-none underline">
@@ -22,11 +22,11 @@ const Contact = () => {
         </div>
 
         {/* Contact Info + Form */}
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Info */}
           <div className="flex flex-col gap-6">
             <h2 className="text-2xl font-semibold">Contact Information</h2>
-            <p className="text-lg lg:text-xl text-center leading-tight">
+            <p className="text-lg lg:text-xl leading-tight">
               Reach out to us anytime — our support team usually replies within
               24 hours.
             </p>
@@ -45,7 +45,7 @@ const Contact = () => {
               </li>
               <li>
                 <i class="ri-map-pin-2-fill"></i> <b>Address:</b> ReHome India,
-                Koramangala, Bengaluru, India
+                Lajpat Nagar, Delhi, India
               </li>
             </ul>
           </div>

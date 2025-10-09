@@ -34,15 +34,17 @@ const Home = () => {
     "Storage",
     "Home Decor",
   ];
+
   const [activeCat, setActiveCat] = useState("All Furniture");
 
-  // Filtering + Sorting
+  // ✅ Filtering + Sorting
   const filteredData = useMemo(() => {
     let data =
       activeCat === "All Furniture"
         ? mainData
-        : mainData.filter((item) => item.cat === activeCat);
+        : mainData.filter((item) => item.parentCat === activeCat);
 
+    // Sorting logic
     if (sortOption === "lowToHigh") {
       data = [...data].sort((a, b) => a.price - b.price);
     } else if (sortOption === "highToLow") {
@@ -228,7 +230,9 @@ const Home = () => {
 
       {/* Latest Collection */}
       <div className="w-full h-full flex flex-col gap-8">
-        <h2 className="text-4xl lg:text-5xl font-bold">Our Latest Collections</h2>
+        <h2 className="text-4xl lg:text-5xl font-bold">
+          Our Latest Collections
+        </h2>
 
         <Swiper
           spaceBetween={32}

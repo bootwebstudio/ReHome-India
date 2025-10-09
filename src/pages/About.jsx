@@ -3,9 +3,39 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const About = () => {
+  const aboutImages = {
+    about: "https://images.unsplash.com/photo-1720247520881-672bc136da8a",
+    mission:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    values:
+      "https://images.unsplash.com/photo-1616627562394-36d1a85a28d0?auto=format&fit=crop&w=1200&q=80",
+    how: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+    join: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+  };
+
   return (
     <div className="w-full h-full px-4 xl:px-16 text-dark bg-neutral/85 font-[Modernist]">
       <Navbar />
+
+      {/* Hero Section */}
+      <div className="w-full h-[60vh] md:h-[70vh] mt-8 rounded-md relative overflow-hidden">
+        <img
+          src={aboutImages.about}
+          alt="About ReHome India"
+          className="w-full h-full rounded-md object-cover brightness-80"
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-neutral bg-dark/60">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">About Us</h2>
+          <p className="w-full md:w-[60%] lg:w-[50%] p-4 md:px-8 lg:px-16 text-lg md:text-xl leading-tight">
+            ReHome India is India's most trusted marketplace for pre-owned
+            furniture and decor.
+            <br />
+            <br />
+            All the furniture and decor listed are verified ensuring a new like
+            condition furniture.
+          </p>
+        </div>
+      </div>
 
       <div className="w-full p-8 px-0 flex flex-col items-center gap-8">
         {/* About Us */}
@@ -45,7 +75,7 @@ const About = () => {
           <h2 className="text-4xl font-bold leading-none underline">
             What You'll Get?
           </h2>
-          <ul className="flex flex-col gap-2 text-lg leading-tight">
+          <ul className="flex flex-col gap-4 text-lg leading-tight">
             <li>
               <b>Trusted Marketplace:</b> Verified sellers and safe
               transactions.
@@ -69,7 +99,7 @@ const About = () => {
           <h2 className="text-4xl font-bold leading-none underline">
             How It Works?
           </h2>
-          <ul className="flex flex-col gap-2 text-lg leading-tight">
+          <ul className="flex flex-col gap-4 text-lg leading-tight">
             <li>
               <b>For Sellers:</b> List your furniture easily, connect with
               buyers, and earn with zero hassle.
