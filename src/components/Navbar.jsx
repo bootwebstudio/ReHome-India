@@ -15,9 +15,16 @@ const Navbar = () => {
       <div className="flex items-center gap-4 xl:hidden">
         <div className="text-xl leading-none flex gap-4">
           <i className="ri-search-line"></i>
-          <i className="ri-poker-hearts-line"></i>
-          <i className="ri-shopping-bag-line"></i>
-          <i className="ri-user-line"></i>
+
+          <Link to="/wishlist">
+            <i className="ri-poker-hearts-line"></i>
+          </Link>
+          <Link to="/cart">
+            <i className="ri-shopping-bag-line"></i>
+          </Link>
+          <Link to="/account">
+            <i className="ri-user-line"></i>
+          </Link>
         </div>
         <div
           onClick={() => setNavOpen(!navOpen)}
@@ -83,9 +90,16 @@ const Navbar = () => {
 
         <div className="text-lg leading-none flex gap-4">
           <i className="ri-search-line"></i>
-          <i className="ri-poker-hearts-line"></i>
-          <i className="ri-shopping-bag-line"></i>
-          <i className="ri-user-line"></i>
+
+          <Link to="/wishlist">
+            <i className="ri-poker-hearts-line"></i>
+          </Link>
+          <Link to="/cart">
+            <i className="ri-shopping-bag-line"></i>
+          </Link>
+          <Link to="/account">
+            <i className="ri-user-line"></i>
+          </Link>
         </div>
 
         <Link

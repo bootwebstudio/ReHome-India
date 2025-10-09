@@ -9,6 +9,11 @@ import Blogs from "./pages/Blogs";
 import Purchase from "./pages/Purchase";
 import Contact from "./pages/Contact";
 
+import Wishlist from "./pages/user/Wishlist";
+import Cart from "./pages/user/Cart";
+import Account from "./pages/user/Account";
+import Checkout from "./pages/user/Checkout";
+
 import Seating from "./pages/purchase/Seating";
 import Tables from "./pages/purchase/Tables";
 import Beds from "./pages/purchase/Beds";
@@ -24,6 +29,12 @@ const AppRouter = () => {
       <Route path="/blogs" element={<Blogs />} />
       <Route path="/purchase" element={<Purchase />} />
       <Route path="/contact" element={<Contact />} />
+
+      {/* Account Routes */}
+      <Route path="/wishlist" element={<Wishlist />} />
+      <Route path="/cart" element={<Cart />} />
+      <Route path="/account" element={<Account />} />
+      <Route path="/checkout" element={<Checkout />} />
 
       {/* Purchase Routes */}
       <Route path="/purchase/seating" element={<Seating />} />
