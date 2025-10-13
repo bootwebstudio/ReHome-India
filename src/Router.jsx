@@ -10,6 +10,7 @@ import Purchase from "./pages/Purchase";
 import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 
+import Search from "./pages/user/Search";
 import Wishlist from "./pages/user/Wishlist";
 import Cart from "./pages/user/Cart";
 import Account from "./pages/user/Account";
@@ -33,6 +34,7 @@ const AppRouter = () => {
       <Route path="/product/:id" element={<Product />} />
 
       {/* Account Routes */}
+      <Route path="/search" element={<Search />} />
       <Route path="/wishlist" element={<Wishlist />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/account" element={<Account />} />

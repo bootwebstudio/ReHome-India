@@ -14,8 +14,9 @@ const Navbar = () => {
       {/* Navigation Menu */}
       <div className="flex items-center gap-4 xl:hidden">
         <div className="text-xl leading-none flex gap-4">
-          <i className="ri-search-line"></i>
-
+          <Link to="/search">
+            <i className="ri-search-line cursor-pointer"></i>
+          </Link>
           <Link to="/wishlist">
             <i className="ri-poker-hearts-line"></i>
           </Link>
@@ -89,8 +90,9 @@ const Navbar = () => {
         </Link>
 
         <div className="text-lg leading-none flex gap-4">
-          <i className="ri-search-line"></i>
-
+          <Link to="/search">
+            <i className="ri-search-line cursor-pointer"></i>
+          </Link>
           <Link to="/wishlist">
             <i className="ri-poker-hearts-line"></i>
           </Link>
