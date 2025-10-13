@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Blogs from "./pages/Blogs";
 import Purchase from "./pages/Purchase";
 import Contact from "./pages/Contact";
+import Product from "./pages/Product";
 
 import Wishlist from "./pages/user/Wishlist";
 import Cart from "./pages/user/Cart";
@@ -29,6 +30,7 @@ const AppRouter = () => {
       <Route path="/blogs" element={<Blogs />} />
       <Route path="/purchase" element={<Purchase />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/product/:id" element={<Product />} />
 
       {/* Account Routes */}
       <Route path="/wishlist" element={<Wishlist />} />

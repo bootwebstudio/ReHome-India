@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const FurnitureCard = ({ item }) => {
   const [isWishlisted, setIsWishlisted] = useState(false);
@@ -32,17 +33,18 @@ const FurnitureCard = ({ item }) => {
   return (
     <div className="w-full h-full">
       <div className="relative">
-        <img
-          src={item.image}
-          alt={item.name}
-          loading="lazy"
-          className="w-full h-full rounded-md object-cover"
-        />
-
+        <Link to={`/product/${item.id}`}>
+          <img
+            src={item.images[0]}
+            alt={item.name}
+            loading="lazy"
+            className="w-full h-full rounded-md object-cover"
+          />
+        </Link>
         {/* Wishlist Button */}
         <button
           onClick={handleWishlistToggle}
-          className={`w-fit h-fit p-2 lg:p-2.5 px-3.5 lg:px-4 text-base lg:text-xl rounded-md absolute top-2 right-2 transition duration-200 ${
+          className={`w-fit h-fit p-2 lg:p-2.5 px-3.5 lg:px-4 text-base lg:text-xl rounded-md absolute top-2 right-2 ${
             isWishlisted ? "text-neutral bg-brand" : "text-brand bg-neutral"
           }`}
         >
@@ -58,12 +60,14 @@ const FurnitureCard = ({ item }) => {
         <span className="text-xs lg:text-sm text-dark/85">
           {item.condition}
         </span>
-        <h4
-          className="text-base md:text-lg lg:text-xl font-medium line-clamp-1"
-          title={item.name}
-        >
-          {item.name}
-        </h4>
+        <Link to={`/product/${item.id}`}>
+          <h4
+            className="text-base md:text-lg lg:text-xl font-medium line-clamp-1"
+            title={item.name}
+          >
+            {item.name}
+          </h4>
+        </Link>
 
         <div className="flex items-center gap-1.5">
           <h4 className="text-sm md:text-base lg:text-lg leading-none">

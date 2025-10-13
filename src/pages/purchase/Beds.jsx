@@ -128,7 +128,7 @@ const Beds = () => {
 
         {/* Furniture Grid */}
         {filteredData.length > 0 ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-8 w-full">
+          <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-8">
             {filteredData.map((item) => (
               <FurnitureCard key={item.id} item={item} />
             ))}

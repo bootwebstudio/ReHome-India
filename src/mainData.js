@@ -1,5 +1,4 @@
 const mainData = [
-  // 🛋️ Seating
   {
     id: 1,
     parentCat: "Seating",
@@ -8,8 +7,24 @@ const mainData = [
     condition: "Excellent Condition",
     price: 20000,
     originalPrice: 40000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/15/a6/e6/15a6e691b2863239f54f7b0a46cd187b.jpg",
+      "https://i.pinimg.com/1200x/d7/d5/11/d7d5115fe4f0e8ccad611dc41027bcf5.jpg",
+      "https://i.pinimg.com/1200x/dd/a1/84/dda18433c068af0971ddcddd9030726f.jpg",
+    ],
+    description:
+      "A premium 2-seater sofa crafted with solid wood and soft linen fabric. Designed for comfort and long-lasting use. Perfect for modern homes and cozy corners.",
+    highlights: [
+      "Made from high-quality solid wood frame",
+      "Soft linen fabric with removable covers",
+      "Ergonomic back support for comfort",
+      "Scratch-resistant legs and easy to clean",
+    ],
+    dimensions: {
+      width: "160 cm",
+      depth: "85 cm",
+      height: "80 cm",
+    },
   },
   {
     id: 2,
@@ -19,8 +34,24 @@ const mainData = [
     condition: "Good Condition",
     price: 15000,
     originalPrice: 32000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/d7/d5/11/d7d5115fe4f0e8ccad611dc41027bcf5.jpg",
+      "https://i.pinimg.com/1200x/d7/d5/11/d7d5115fe4f0e8ccad611dc41027bcf5.jpg",
+      "https://i.pinimg.com/1200x/d7/d5/11/d7d5115fe4f0e8ccad611dc41027bcf5.jpg",
+    ],
+    description:
+      "Comfortable leather recliner with smooth reclining mechanism. Perfect for reading or relaxing after a long day.",
+    highlights: [
+      "Genuine leather upholstery",
+      "Smooth reclining mechanism",
+      "Padded armrests for extra comfort",
+      "Sturdy metal base",
+    ],
+    dimensions: {
+      width: "85 cm",
+      depth: "95 cm",
+      height: "110 cm",
+    },
   },
   {
     id: 3,
@@ -30,8 +61,24 @@ const mainData = [
     condition: "Excellent Condition",
     price: 8500,
     originalPrice: 18000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/dd/a1/84/dda18433c068af0971ddcddd9030726f.jpg",
+      "https://i.pinimg.com/1200x/dd/a1/84/dda18433c068af0971ddcddd9030726f.jpg",
+      "https://i.pinimg.com/1200x/dd/a1/84/dda18433c068af0971ddcddd9030726f.jpg",
+    ],
+    description:
+      "Stylish lounge chair with comfortable fabric upholstery, perfect for living rooms or reading nooks.",
+    highlights: [
+      "High-density foam cushioning",
+      "Removable fabric covers",
+      "Solid wood legs",
+      "Easy to assemble",
+    ],
+    dimensions: {
+      width: "75 cm",
+      depth: "80 cm",
+      height: "90 cm",
+    },
   },
   {
     id: 4,
@@ -41,8 +88,24 @@ const mainData = [
     condition: "Good Condition",
     price: 12000,
     originalPrice: 24000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/5f/0e/75/5f0e755114a8839471c664ddac77d5fa.jpg",
+      "https://i.pinimg.com/1200x/5f/0e/75/5f0e755114a8839471c664ddac77d5fa.jpg",
+      "https://i.pinimg.com/1200x/5f/0e/75/5f0e755114a8839471c664ddac77d5fa.jpg",
+    ],
+    description:
+      "Elegant set of 4 wooden dining chairs with comfortable padded seats. Perfect for family dining.",
+    highlights: [
+      "Solid sheesham wood construction",
+      "Padded fabric seats",
+      "Classic design with carved details",
+      "Sturdy and durable",
+    ],
+    dimensions: {
+      width: "45 cm",
+      depth: "50 cm",
+      height: "95 cm",
+    },
   },
   {
     id: 5,
@@ -52,11 +115,25 @@ const mainData = [
     condition: "Like New",
     price: 7000,
     originalPrice: 15000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/f6/82/56/f68256b9bae8f5f2d192446d144034e0.jpg",
+      "https://i.pinimg.com/1200x/f6/82/56/f68256b9bae8f5f2d192446d144034e0.jpg",
+      "https://i.pinimg.com/1200x/f6/82/56/f68256b9bae8f5f2d192446d144034e0.jpg",
+    ],
+    description:
+      "Professional ergonomic office chair with breathable mesh back and adjustable highlights for all-day comfort.",
+    highlights: [
+      "Breathable mesh backrest",
+      "Adjustable seat height",
+      "Lumbar support",
+      "360-degree swivel",
+    ],
+    dimensions: {
+      width: "60 cm",
+      depth: "60 cm",
+      height: "120 cm",
+    },
   },
-
-  // 🪵 Tables
   {
     id: 6,
     parentCat: "Tables",
@@ -65,8 +142,24 @@ const mainData = [
     condition: "Excellent Condition",
     price: 9500,
     originalPrice: 20000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/fe/87/07/fe87070443eecc4bfb76401eb22019e1.jpg",
+      "https://i.pinimg.com/1200x/fe/87/07/fe87070443eecc4bfb76401eb22019e1.jpg",
+      "https://i.pinimg.com/1200x/fe/87/07/fe87070443eecc4bfb76401eb22019e1.jpg",
+    ],
+    description:
+      "Elegant round coffee table with marble top and golden metal base. Adds sophistication to any living room.",
+    highlights: [
+      "Carrara marble tabletop",
+      "Gold-finished metal base",
+      "Scratch-resistant surface",
+      "Easy to clean and maintain",
+    ],
+    dimensions: {
+      width: "90 cm",
+      depth: "90 cm",
+      height: "45 cm",
+    },
   },
   {
     id: 7,
@@ -76,8 +169,24 @@ const mainData = [
     condition: "Good Condition",
     price: 18000,
     originalPrice: 40000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/95/53/48/955348a4173356f943a596974cbe9d2a.jpg",
+      "https://i.pinimg.com/1200x/95/53/48/955348a4173356f943a596974cbe9d2a.jpg",
+      "https://i.pinimg.com/1200x/95/53/48/955348a4173356f943a596974cbe9d2a.jpg",
+    ],
+    description:
+      "Solid teak wood dining table that comfortably seats six people. Perfect for family gatherings and dinners.",
+    highlights: [
+      "Solid teak wood construction",
+      "Natural wood finish",
+      "Extendable design",
+      "Sturdy and long-lasting",
+    ],
+    dimensions: {
+      width: "180 cm",
+      depth: "90 cm",
+      height: "75 cm",
+    },
   },
   {
     id: 8,
@@ -87,8 +196,24 @@ const mainData = [
     condition: "Excellent Condition",
     price: 5500,
     originalPrice: 12000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/90/14/d7/9014d7d5b4a1c617f8e663d6bd04f3f9.jpg",
+      "https://i.pinimg.com/1200x/4e/5f/6a/4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b.jpg",
+      "https://i.pinimg.com/1200x/5f/6a/7b/5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c.jpg",
+    ],
+    description:
+      "Compact office table with built-in drawer, perfect for small spaces or home offices.",
+    highlights: [
+      "Built-in storage drawer",
+      "Durable MDF top",
+      "Metal frame construction",
+      "Easy to assemble",
+    ],
+    dimensions: {
+      width: "100 cm",
+      depth: "50 cm",
+      height: "75 cm",
+    },
   },
   {
     id: 9,
@@ -98,8 +223,24 @@ const mainData = [
     condition: "Like New",
     price: 4000,
     originalPrice: 9000,
-    image:
+    images: [
       "https://i.pinimg.com/736x/b8/34/26/b834261fd0288f1687132a741e44d91a.jpg",
+      "https://i.pinimg.com/736x/b8/34/26/b834261fd0288f1687132a741e44d91a.jpg",
+      "https://i.pinimg.com/736x/b8/34/26/b834261fd0288f1687132a741e44d91a.jpg",
+    ],
+    description:
+      "Minimalist wooden bedside table with clean lines and practical storage shelf.",
+    highlights: [
+      "Solid wood construction",
+      "Open shelf design",
+      "Smooth finish",
+      "Compact and space-saving",
+    ],
+    dimensions: {
+      width: "40 cm",
+      depth: "35 cm",
+      height: "55 cm",
+    },
   },
   {
     id: 10,
@@ -109,11 +250,25 @@ const mainData = [
     condition: "Good Condition",
     price: 7500,
     originalPrice: 16000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/75/f3/4a/75f34a7e91f87b77eac65916f54b9bcd.jpg",
+      "https://i.pinimg.com/1200x/75/f3/4a/75f34a7e91f87b77eac65916f54b9bcd.jpg",
+      "https://i.pinimg.com/1200x/75/f3/4a/75f34a7e91f87b77eac65916f54b9bcd.jpg",
+    ],
+    description:
+      "Sleek console table with multiple drawers, ideal for hallway or entryway decoration and storage.",
+    highlights: [
+      "Three spacious drawers",
+      "Metal hairpin legs",
+      "Wooden top with laminate finish",
+      "Easy to clean surface",
+    ],
+    dimensions: {
+      width: "120 cm",
+      depth: "30 cm",
+      height: "80 cm",
+    },
   },
-
-  // 🛏️ Beds
   {
     id: 11,
     parentCat: "Beds",
@@ -122,8 +277,24 @@ const mainData = [
     condition: "Excellent Condition",
     price: 22000,
     originalPrice: 45000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/de/bc/46/debc4660cebb71cabaf8360e2be63e20.jpg",
+      "https://i.pinimg.com/1200x/de/bc/46/debc4660cebb71cabaf8360e2be63e20.jpg",
+      "https://i.pinimg.com/1200x/de/bc/46/debc4660cebb71cabaf8360e2be63e20.jpg",
+    ],
+    description:
+      "Spacious king size bed with elegant upholstered headboard, providing comfort and style to your bedroom.",
+    highlights: [
+      "Upholstered headboard",
+      "Solid wood frame",
+      "Under-bed clearance",
+      "Easy assembly required",
+    ],
+    dimensions: {
+      width: "195 cm",
+      depth: "210 cm",
+      height: "110 cm",
+    },
   },
   {
     id: 12,
@@ -133,8 +304,24 @@ const mainData = [
     condition: "Like New",
     price: 20000,
     originalPrice: 42000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/eb/16/0c/eb160cfe8ec1c01fd80ad5110763384c.jpg",
+      "https://i.pinimg.com/1200x/eb/16/0c/eb160cfe8ec1c01fd80ad5110763384c.jpg",
+      "https://i.pinimg.com/1200x/eb/16/0c/eb160cfe8ec1c01fd80ad5110763384c.jpg",
+    ],
+    description:
+      "Queen size bed with hydraulic storage system, offering ample space to store bedding and other items.",
+    highlights: [
+      "Hydraulic lift storage",
+      "Four spacious compartments",
+      "Sturdy wooden slats",
+      "Modern design",
+    ],
+    dimensions: {
+      width: "150 cm",
+      depth: "200 cm",
+      height: "90 cm",
+    },
   },
   {
     id: 13,
@@ -144,8 +331,24 @@ const mainData = [
     condition: "Good Condition",
     price: 9500,
     originalPrice: 18000,
-    image:
+    images: [
       "https://i.pinimg.com/736x/8a/25/13/8a2513f0d147c63d064ae363c76716e4.jpg",
+      "https://i.pinimg.com/736x/8a/25/13/8a2513f0d147c63d064ae363c76716e4.jpg",
+      "https://i.pinimg.com/736x/8a/25/13/8a2513f0d147c63d064ae363c76716e4.jpg",
+    ],
+    description:
+      "Comfortable single bed with included mattress, perfect for kids' rooms or guest rooms.",
+    highlights: [
+      "Includes 6-inch foam mattress",
+      "Solid pine wood construction",
+      "Headboard with shelf",
+      "Sturdy and safe design",
+    ],
+    dimensions: {
+      width: "100 cm",
+      depth: "190 cm",
+      height: "85 cm",
+    },
   },
   {
     id: 14,
@@ -155,8 +358,24 @@ const mainData = [
     condition: "Excellent Condition",
     price: 15000,
     originalPrice: 30000,
-    image:
+    images: [
       "https://i.pinimg.com/736x/ea/7d/cc/ea7dcc6440c9b8b86e49dbe6aa9eada2.jpg",
+      "https://i.pinimg.com/736x/ea/7d/cc/ea7dcc6440c9b8b86e49dbe6aa9eada2.jpg",
+      "https://i.pinimg.com/736x/ea/7d/cc/ea7dcc6440c9b8b86e49dbe6aa9eada2.jpg",
+    ],
+    description:
+      "Safe and sturdy wooden bunk bed with ladder, perfect for siblings sharing a room.",
+    highlights: [
+      "Solid wood construction",
+      "Built-in safety rails",
+      "Easy-to-climb ladder",
+      "Space-saving design",
+    ],
+    dimensions: {
+      width: "100 cm",
+      depth: "200 cm",
+      height: "160 cm",
+    },
   },
   {
     id: 15,
@@ -166,11 +385,25 @@ const mainData = [
     condition: "Like New",
     price: 24000,
     originalPrice: 48000,
-    image:
+    images: [
       "https://i.pinimg.com/736x/f8/28/e4/f828e4193a884b53ab19af0bab016020.jpg",
+      "https://i.pinimg.com/736x/f8/28/e4/f828e4193a884b53ab19af0bab016020.jpg",
+      "https://i.pinimg.com/736x/f8/28/e4/f828e4193a884b53ab19af0bab016020.jpg",
+    ],
+    description:
+      "King size storage bed with multiple drawers, providing excellent storage solution for bedrooms.",
+    highlights: [
+      "Four large storage drawers",
+      "Upholstered headboard",
+      "Solid wood construction",
+      "Smooth gliding drawers",
+    ],
+    dimensions: {
+      width: "195 cm",
+      depth: "210 cm",
+      height: "95 cm",
+    },
   },
-
-  // 🗄️ Storage
   {
     id: 16,
     parentCat: "Storage",
@@ -179,8 +412,24 @@ const mainData = [
     condition: "Good Condition",
     price: 14000,
     originalPrice: 28000,
-    image:
+    images: [
       "https://i.pinimg.com/736x/33/ef/64/33ef640c8281fa5ca095da2268e98a31.jpg",
+      "https://i.pinimg.com/736x/33/ef/64/33ef640c8281fa5ca095da2268e98a31.jpg",
+      "https://i.pinimg.com/736x/33/ef/64/33ef640c8281fa5ca095da2268e98a31.jpg",
+    ],
+    description:
+      "Spacious 3-door wooden wardrobe with hanging space and shelves, perfect for organized storage.",
+    highlights: [
+      "Three-door design",
+      "Mixed hanging and shelf space",
+      "Mirror on one door",
+      "Sturdy construction",
+    ],
+    dimensions: {
+      width: "150 cm",
+      depth: "60 cm",
+      height: "200 cm",
+    },
   },
   {
     id: 17,
@@ -190,8 +439,24 @@ const mainData = [
     condition: "Excellent Condition",
     price: 4500,
     originalPrice: 9000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/56/1c/9e/561c9ede755c6216147663b776e5f817.jpg",
+      "https://i.pinimg.com/1200x/56/1c/9e/561c9ede755c6216147663b776e5f817.jpg",
+      "https://i.pinimg.com/1200x/56/1c/9e/561c9ede755c6216147663b776e5f817.jpg",
+    ],
+    description:
+      "Space-efficient shoe rack with multiple shelves, keeping your footwear organized and easily accessible.",
+    highlights: [
+      "Four-tier design",
+      "Open shelf concept",
+      "Sturdy metal frame",
+      "Easy to assemble",
+    ],
+    dimensions: {
+      width: "60 cm",
+      depth: "25 cm",
+      height: "80 cm",
+    },
   },
   {
     id: 18,
@@ -201,8 +466,24 @@ const mainData = [
     condition: "Like New",
     price: 7500,
     originalPrice: 16000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/de/7c/2e/de7c2e3d6e5b2aaee1a31284bf3f3935.jpg",
+      "https://i.pinimg.com/1200x/de/7c/2e/de7c2e3d6e5b2aaee1a31284bf3f3935.jpg",
+      "https://i.pinimg.com/1200x/de/7c/2e/de7c2e3d6e5b2aaee1a31284bf3f3935.jpg",
+    ],
+    description:
+      "Modern open bookshelf with five spacious layers, perfect for displaying books and decorative items.",
+    highlights: [
+      "Five open shelves",
+      "Metal frame with wooden shelves",
+      "Industrial design",
+      "Sturdy and stable",
+    ],
+    dimensions: {
+      width: "80 cm",
+      depth: "30 cm",
+      height: "180 cm",
+    },
   },
   {
     id: 19,
@@ -212,8 +493,24 @@ const mainData = [
     condition: "Good Condition",
     price: 8000,
     originalPrice: 18000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/f9/53/83/f95383c373e36aeb33875e4dafa03834.jpg",
+      "https://i.pinimg.com/1200x/f9/53/83/f95383c373e36aeb33875e4dafa03834.jpg",
+      "https://i.pinimg.com/1200x/f9/53/83/f95383c373e36aeb33875e4dafa03834.jpg",
+    ],
+    description:
+      "Sleek floating TV unit with storage compartments and cable management system.",
+    highlights: [
+      "Wall-mounted design",
+      "Cable management system",
+      "Two storage compartments",
+      "Tempered glass top",
+    ],
+    dimensions: {
+      width: "140 cm",
+      depth: "35 cm",
+      height: "50 cm",
+    },
   },
   {
     id: 20,
@@ -223,11 +520,25 @@ const mainData = [
     condition: "Excellent Condition",
     price: 11000,
     originalPrice: 23000,
-    image:
+    images: [
       "https://i.pinimg.com/736x/8f/93/5a/8f935a1ab7c3fa17d304d3fef7f83da6.jpg",
+      "https://i.pinimg.com/736x/8f/93/5a/8f935a1ab7c3fa17d304d3fef7f83da6.jpg",
+      "https://i.pinimg.com/736x/8f/93/5a/8f935a1ab7c3fa17d304d3fef7f83da6.jpg",
+    ],
+    description:
+      "Elegant dresser with attached mirror and multiple drawers, perfect for bedroom organization.",
+    highlights: [
+      "Six spacious drawers",
+      "Attached dressing mirror",
+      "Soft-closing drawers",
+      "Solid wood construction",
+    ],
+    dimensions: {
+      width: "120 cm",
+      depth: "45 cm",
+      height: "180 cm",
+    },
   },
-
-  // 🏠 Home Decor
   {
     id: 21,
     parentCat: "Home Decor",
@@ -236,8 +547,24 @@ const mainData = [
     condition: "New",
     price: 3500,
     originalPrice: 7000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/9c/3b/05/9c3b05c652c1c8537d8b71e2b1d029ac.jpg",
+      "https://i.pinimg.com/1200x/9c/3b/05/9c3b05c652c1c8537d8b71e2b1d029ac.jpg",
+      "https://i.pinimg.com/1200x/9c/3b/05/9c3b05c652c1c8537d8b71e2b1d029ac.jpg",
+    ],
+    description:
+      "Vibrant abstract canvas painting that adds color and artistic flair to any room.",
+    highlights: [
+      "Hand-painted canvas",
+      "Ready to hang",
+      "Vibrant acrylic colors",
+      "Modern abstract design",
+    ],
+    dimensions: {
+      width: "90 cm",
+      depth: "5 cm",
+      height: "120 cm",
+    },
   },
   {
     id: 22,
@@ -247,8 +574,24 @@ const mainData = [
     condition: "Like New",
     price: 5000,
     originalPrice: 10000,
-    image:
+    images: [
       "https://i.pinimg.com/736x/af/ee/6f/afee6f33320847d510bc8d01063cc429.jpg",
+      "https://i.pinimg.com/736x/af/ee/6f/afee6f33320847d510bc8d01063cc429.jpg",
+      "https://i.pinimg.com/736x/af/ee/6f/afee6f33320847d510bc8d01063cc429.jpg",
+    ],
+    description:
+      "Elegant round mirror with gold frame, perfect for adding a touch of luxury to your space.",
+    highlights: [
+      "Gold metal frame",
+      "Distortion-free glass",
+      "Easy wall mounting",
+      "Decorative and functional",
+    ],
+    dimensions: {
+      width: "80 cm",
+      depth: "5 cm",
+      height: "80 cm",
+    },
   },
   {
     id: 23,
@@ -258,8 +601,24 @@ const mainData = [
     condition: "Excellent Condition",
     price: 4200,
     originalPrice: 9000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/44/9c/72/449c728df0318cf7d02009df8cebe0f9.jpg",
+      "https://i.pinimg.com/1200x/44/9c/72/449c728df0318cf7d02009df8cebe0f9.jpg",
+      "https://i.pinimg.com/1200x/44/9c/72/449c728df0318cf7d02009df8cebe0f9.jpg",
+    ],
+    description:
+      "Contemporary floor lamp with fabric shade, providing ambient lighting for living rooms or bedrooms.",
+    highlights: [
+      "Adjustable height",
+      "Fabric lamp shade",
+      "Stable base",
+      "Energy-efficient LED compatible",
+    ],
+    dimensions: {
+      width: "40 cm",
+      depth: "40 cm",
+      height: "160 cm",
+    },
   },
   {
     id: 24,
@@ -269,8 +628,24 @@ const mainData = [
     condition: "New",
     price: 2200,
     originalPrice: 5000,
-    image:
+    images: [
       "https://i.pinimg.com/736x/aa/5d/62/aa5d62b1b1ce5cb80561c0a198aeb382.jpg",
+      "https://i.pinimg.com/736x/aa/5d/62/aa5d62b1b1ce5cb80561c0a198aeb382.jpg",
+      "https://i.pinimg.com/736x/aa/5d/62/aa5d62b1b1ce5cb80561c0a198aeb382.jpg",
+    ],
+    description:
+      "Beautiful set of two ceramic vases with modern geometric patterns, perfect for fresh or artificial flowers.",
+    highlights: [
+      "Set of two different sizes",
+      "Hand-painted geometric design",
+      "Glazed ceramic finish",
+      "Waterproof and durable",
+    ],
+    dimensions: {
+      width: "15 cm",
+      depth: "15 cm",
+      height: "25 cm",
+    },
   },
   {
     id: 25,
@@ -280,8 +655,24 @@ const mainData = [
     condition: "Excellent Condition",
     price: 5500,
     originalPrice: 12000,
-    image:
+    images: [
       "https://i.pinimg.com/1200x/77/49/54/774954bd4dfd2ea71d065c939dae0ae2.jpg",
+      "https://i.pinimg.com/1200x/77/49/54/774954bd4dfd2ea71d065c939dae0ae2.jpg",
+      "https://i.pinimg.com/1200x/77/49/54/774954bd4dfd2ea71d065c939dae0ae2.jpg",
+    ],
+    description:
+      "Soft handwoven cotton rug with traditional pattern, adding warmth and texture to any room.",
+    highlights: [
+      "100% handwoven cotton",
+      "Traditional geometric pattern",
+      "Non-slip backing",
+      "Machine washable",
+    ],
+    dimensions: {
+      width: "160 cm",
+      depth: "230 cm",
+      height: "2 cm",
+    },
   },
 ];
 
