@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Swiper } from "swiper/react";
 import { SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -37,7 +38,7 @@ const Home = () => {
 
   const [activeCat, setActiveCat] = useState("All Furniture");
 
-  // ✅ Filtering + Sorting
+  // Filtering + Sorting
   const filteredData = useMemo(() => {
     let data =
       activeCat === "All Furniture"
@@ -324,11 +325,13 @@ const Home = () => {
                 key={index}
                 className="w-full h-full overflow-hidden rounded-md flex flex-col items-center gap-2"
               >
-                <img
-                  src={cat.image}
-                  alt="Storage Collection"
-                  className="w-full h-full rounded-md object-cover"
-                />
+                <Link to={cat.route}>
+                  <img
+                    src={cat.image}
+                    alt="Storage Collection"
+                    className="w-full h-full rounded-md object-cover"
+                  />
+                </Link>
                 <h4 className="text-xl lg:text-2xl font-bold text-center">
                   {cat.title}
                 </h4>

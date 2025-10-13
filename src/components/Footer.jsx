@@ -35,11 +35,11 @@ const Footer = () => {
             <div className="flex flex-col gap-2 lg:gap-4 items-center sm:items-start">
               <h4 className="text-xl font-bold">Collections</h4>
               <div className="text-base lg:text-lg flex flex-col gap-2 text-center sm:text-left">
-                <Link to="/">Seating</Link>
-                <Link to="/">Tables</Link>
-                <Link to="/">Beds</Link>
-                <Link to="/">Storage</Link>
-                <Link to="/">Home Decor</Link>
+                <Link to="/purchase/seating">Seating</Link>
+                <Link to="/purchase/tables">Tables</Link>
+                <Link to="/purchase/beds">Beds</Link>
+                <Link to="/purchase/storage">Storage</Link>
+                <Link to="/purchase/home-decor">Home Decor</Link>
               </div>
             </div>
           </div>
@@ -69,11 +69,25 @@ const Footer = () => {
         <div className="w-full p-4 px-0 text-sm lg:text-base flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
           <p>© {new Date().getFullYear()} ReHome India. All rights reserved.</p>
           {/* Policies */}
-          <div className="flex flex-col lg:flex-row gap-4 md:gap-8">
-            <Link to="/">FAQs</Link>
+          <div className="flex flex-col lg:flex-row gap-2 md:gap-8">
             <Link to="/">Return Policies</Link>
             <Link to="/">Shipping Policies</Link>
             <Link to="/">Terms & Conditions</Link>
+
+            {/* Contact */}
+            <div className="flex flex-col lg:flex-row items-center gap-2 md:gap-8">
+              <a
+                href="https://api.whatsapp.com/send/?phone=918409494440"
+                className="flex gap-2"
+              >
+                <i class="ri-whatsapp-line"></i>
+                <span className="">+91 98765 43210</span>
+              </a>
+              <a href="mailto:contact@rehomeindia.com" className="flex gap-2">
+                <i class="ri-mail-line"></i>
+                <span className="">contact@rehomeindia.com</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
