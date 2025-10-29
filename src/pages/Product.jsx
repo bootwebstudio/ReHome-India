@@ -1,5 +1,8 @@
-import { useState, useEffect, useRef } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useRef } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 // Data
 import mainData from "../mainData";
@@ -85,6 +88,33 @@ const Product = () => {
       slider.removeEventListener("touchend", handleTouchEnd);
     };
   }, [product]);
+
+  // Add to Cart
+  const addToCart = (product) => {
+    const existingCart = JSON.parse(localStorage.getItem("cart") || "[]");
+    const existingItem = existingCart.find((item) => item.id === product.id);
+
+    if (existingItem) {
+      alert("⚠️ This item is already in your cart!");
+      return;
+    }
+
+    existingCart.push({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      originalPrice: product.originalPrice,
+      image: product.images?.[0] || product.image,
+      condition: product.condition,
+    });
+
+    localStorage.setItem("cart", JSON.stringify(existingCart));
+
+    window.dispatchEvent(new Event("storage"));
+    window.dispatchEvent(new Event("cartUpdated"));
+
+    alert("🛒 Added to cart!");
+  };
 
   if (!product)
     return (
@@ -180,12 +210,15 @@ const Product = () => {
               </span>
             </div>
 
-            <button className="w-fit mt-2 mx-0 p-4 px-8 text-lg text-center leading-none rounded-md text-neutral bg-brand">
+            <button
+              onClick={() => addToCart(product)}
+              className="w-fit mt-2 mx-0 p-4 px-8 text-lg text-center leading-none rounded-md text-neutral bg-brand hover:bg-brand/90 transition-colors"
+            >
               Add to Cart
             </button>
 
             <div className="pt-4 flex flex-col gap-4">
-              {/* Hihglights */}
+              {/* Highlights */}
               <div className="flex flex-col gap-2">
                 <h4 className="text-xl font-bold">Highlights</h4>
                 <ul className="list-disc list-inside">
