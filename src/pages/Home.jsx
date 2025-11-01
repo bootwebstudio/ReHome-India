@@ -346,7 +346,7 @@ const Home = () => {
 
       {/* Services */}
       <div className="w-full h-full p-12 px-0 lg:p-20 lg:px-0 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-        <div className="w-full h-full p-8 rounded-md flex flex-col items-center gap-4 bg-dark/15">
+        <div className="w-full h-full p-8 rounded-md flex flex-col items-center gap-4 bg-white">
           <img src={Sell} alt="" className="w-1/2" />
           <h2 className="text-2xl lg:text-4xl font-bold leading-none">
             Sell Furnitures
@@ -356,11 +356,14 @@ const Home = () => {
             with local clients, enabling smooth, quick deals that put cash in
             hand.
           </p>
-          <button className="p-4 px-8 text-base lg:text-xl leading-none rounded-md text-white bg-brand">
+          <Link
+            to="/sell"
+            className="p-4 px-8 text-base lg:text-xl leading-none rounded-md text-white bg-brand"
+          >
             Become a seller
-          </button>
+          </Link>
         </div>
-        <div className="w-full h-full p-8 rounded-md flex flex-col items-center gap-4 bg-dark/15">
+        <div className="w-full h-full p-8 rounded-md flex flex-col items-center gap-4 bg-white">
           <img src={Purchase} alt="" className="w-1/2" />
           <h2 className="text-2xl lg:text-4xl font-bold leading-none">
             Purchase Furnitures
@@ -370,9 +373,12 @@ const Home = () => {
             excellent deals, eco benefits, and premium looks for homes with
             instant comfort.
           </p>
-          <button className="p-4 px-8 text-base lg:text-xl leading-none rounded-md text-white bg-brand">
+          <Link
+            to="/purchase"
+            className="p-4 px-8 text-base lg:text-xl leading-none rounded-md text-white bg-brand"
+          >
             Explore all furniture
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -418,7 +424,7 @@ const Home = () => {
 
       {/* Newsletter */}
       <div className="w-full h-full p-20 px-0 flex flex-col items-center">
-        <div className="w-full lg:w-[80%] h-full p-8 rounded-md flex flex-col gap-4 items-center bg-dark/15">
+        <div className="w-full lg:w-[80%] h-full p-8 rounded-md flex flex-col gap-4 items-center bg-white">
           <h2 className="text-2xl lg:text-4xl font-bold leading-none">
             Get upto 25<span className="font-[Italiana]">%</span> discount
           </h2>

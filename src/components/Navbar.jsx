@@ -23,9 +23,6 @@ const Navbar = () => {
           <Link to="/cart">
             <i className="ri-shopping-bag-line"></i>
           </Link>
-          <Link to="/account">
-            <i className="ri-user-line"></i>
-          </Link>
         </div>
         <div
           onClick={() => setNavOpen(!navOpen)}
@@ -98,9 +95,6 @@ const Navbar = () => {
           </Link>
           <Link to="/cart">
             <i className="ri-shopping-bag-line"></i>
-          </Link>
-          <Link to="/account">
-            <i className="ri-user-line"></i>
           </Link>
         </div>
 
